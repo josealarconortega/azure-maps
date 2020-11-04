@@ -1,6 +1,6 @@
 {
   "name": "@vue-azure-maps/azure-mapa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vue wrapper for Azure Maps v8",
   "main": "./dist/index.js",
   "scripts": {
@@ -22,9 +22,9 @@
   "author": "josealarconortega",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/josealarconortega/azure-mapa/issues"
+    "url": "https://github.com/josealarconortega/azure-maps/issues"
   },
-  "homepage": "https://github.com/josealarconortega/azure-mapa#readme",
+  "homepage": "https://github.com/josealarconortega/azure-maps/blob/master/README.md",
   "files": [
     "src",
     "dist"
