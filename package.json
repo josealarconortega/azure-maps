@@ -1,0 +1,61 @@
+{
+  "name": "@vue-azure-maps/azure-mapa",
+  "version": "0.0.3",
+  "description": "Vue wrapper for Azure Maps v8",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build-full": "npm run clean && npm run build",
+    "clean": "rimraf dist",
+    "build": "cross-env NODE_ENV=production cross-env BABEL_ENV=production webpack --mode production  --progress --hide-modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josealarconortega/azure-maps"
+  },
+  "keywords": [
+    "vue",
+    "azure",
+    "maps",
+    "component"
+  ],
+  "author": "josealarconortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josealarconortega/azure-mapa/issues"
+  },
+  "homepage": "https://github.com/josealarconortega/azure-mapa#readme",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
+    "promise-polyfill": "^8.1.0",
+    "rimraf": "^2.6.3",
+    "vue-loader": "^15.6.2",
+    "vue-template-compiler": "^2.6.0",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-stats-plugin": "^0.2.1"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "dependencies": {
+    "utm-latlng": "^1.0.6",
+    "vuex": "^3.3.0"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
