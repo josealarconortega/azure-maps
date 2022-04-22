@@ -296,10 +296,10 @@
                     }
                 });
                 var query = comuna;
-                if ((!calle || /^\s*$/.test(calle)) ) {
+                if ((!calle || !/^\s*$/.test(calle)) ) {
                     query = calle + ', ' + comuna;
 
-                    if ((!numero || /^\s*$/.test(numero))) {
+                    if ((!numero || !/^\s*$/.test(numero))) {
 
                         query = calle + ' ' + numero + ', ' + comuna;
                     }
