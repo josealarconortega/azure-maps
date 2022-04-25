@@ -296,10 +296,10 @@
                     }
                 });
                 var query = comuna;
-                if ((!calle || /^\s*$/.test(calle)) ) {
+                if ((!calle || !/^\s*$/.test(calle)) ) {
                     query = calle + ', ' + comuna;
 
-                    if ((!numero || /^\s*$/.test(numero))) {
+                    if ((!numero || !/^\s*$/.test(numero))) {
 
                         query = calle + ' ' + numero + ', ' + comuna;
                     }
@@ -345,7 +345,7 @@
                     if (pushpin != undefined){
                         this.searchAddress(query).then((response) => {
                             let addressResult = {};
-                            let results = response.results.filter((result) => result.type == 'Geography' && result.id.indexOf('CL') != -1);
+                            let results = response.results.filter((result) => /*result.type == 'Geography' &&*/ result.id.indexOf('CL') != -1);
                             if (results.length > 0) {
                                 position = [results[0].position.lon, results[0].position.lat];
                                 addressResult = results[0]['address'];
